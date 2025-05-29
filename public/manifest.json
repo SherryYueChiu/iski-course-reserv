@@ -4,13 +4,14 @@
   "description": "iSKI 滑雪課程管理系統",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f5f7fa",
-  "theme_color": "#42b883",
+  "background_color": "#0e0e0e",
+  "theme_color": "#4a90e2",
   "icons": [
     {
       "src": "/image/maskable_icon_x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 } 
