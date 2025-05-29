@@ -1,0 +1,16 @@
+{
+  "name": "iSKI 課程管理",
+  "short_name": "iSKI",
+  "description": "iSKI 滑雪課程管理系統",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f7fa",
+  "theme_color": "#42b883",
+  "icons": [
+    {
+      "src": "/image/maskable_icon_x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+} 
