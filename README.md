@@ -2,6 +2,8 @@
 
 方便導向iSki課程預約系統的一個入口網站。
 
+網址：[https://iski-course-reserv.vercel.app/](https://iski-course-reserv.vercel.app/)
+
 ## 功能特點
 
 - 快速訪問各類課程管理頁面
