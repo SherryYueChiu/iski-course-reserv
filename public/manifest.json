@@ -1,7 +1,7 @@
 {
-  "name": "iSKI 課程管理",
-  "short_name": "iSKI",
-  "description": "iSKI 滑雪課程管理系統",
+  "name": "預約滑雪",
+  "short_name": "預約滑雪",
+  "description": "iSKI課程預約入口",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0e0e0e",
