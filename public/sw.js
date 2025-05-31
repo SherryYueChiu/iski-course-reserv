@@ -21,12 +21,29 @@ self.addEventListener('install', event => {
 
 self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request)
+    fetch(event.request)
       .then(response => {
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
+        // Clone the response as it can only be consumed once
+        const responseToCache = response.clone();
+        
+        // Open the cache and store the response
+        caches.open(CACHE_NAME)
+          .then(cache => {
+            cache.put(event.request, responseToCache);
+          });
+        
+        return response;
+      })
+      .catch(() => {
+        // If network fails, try to get from cache
+        return caches.match(event.request)
+          .then(cachedResponse => {
+            if (cachedResponse) {
+              return cachedResponse;
+            }
+            // If not in cache, return a fallback response
+            return new Response('Network error occurred');
+          });
       })
   );
 }); 
