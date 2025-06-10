@@ -5,19 +5,18 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build && sw-precache --config=sw-precache-config.js",
-    "preview": "vite preview",
-    "sw": "sw-precache --config=sw-precache-config.js"
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.5.13",
-    "sw-precache": "^5.2.1"
+    "vue": "^3.5.13"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.3",
     "@vue/tsconfig": "^0.7.0",
     "typescript": "~5.8.3",
     "vite": "^6.3.5",
+    "vite-plugin-pwa": "^1.0.0",
     "vue-tsc": "^2.2.8"
   }
 }
